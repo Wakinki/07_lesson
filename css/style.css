@@ -14,7 +14,9 @@ a {
       color: hsl(0, 100%, 20%);
       border: 3px solid hsl(0, 100%, 20%);
       border-radius: 20px;
-      padding: 0em 0.25em 0em 0.25em
+      padding: 0em 0.25em 0em 0.25em;
+      
+      
 }
 
 /* Tyto pseudo třídy musí být v tomto pořadí aby se nepřepisovaly */
@@ -22,9 +24,16 @@ a {
       color: darkmagenta;
 } */
 
-a:hover, a:focus {
+a:hover {
       color: hsl(0, 100%, 35%);
       border-color: hsl(0, 100%, 35%);
+      /* opacity: 0.7; */
+}
+
+a:focus {
+      color: hsl(0, 100%, 35%);
+      border-color: hsl(0, 100%, 35%);
+      outline: 3px solid yellow;    
       /* opacity: 0.7; */
 }
 
